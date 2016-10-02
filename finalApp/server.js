@@ -56,6 +56,10 @@ app.get('/add', function(req, res){
 	res.sendFile(path.join(__dirname, 'add.html'));
 })
 
+app.get('/data', function(req, res){
+	res.sendFile(path.join(__dirname, 'data.html'));
+})
+
 // Search for Specific Character (or all characters) - provides JSON
 app.get('/api/:characters?', function(req, res){
 
